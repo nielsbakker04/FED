@@ -3,9 +3,25 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
 }
 
+/* FONTFACES */
 
+@font-face {
+	font-family: Heading;
+	src: url(../font/Gurajada/Gurajada-Regular.ttf);
+}
+
+@font-face {
+	font-family: BodyBold;
+	src: url(../font/futura-bt-bold.ttf);
+}
+
+@font-face {
+	font-family: Body;
+	src: url(../font/futura-bt.ttf);
+}
 
 
 
@@ -15,17 +31,1047 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-green: #9AD18B;
+	--color-orange: #F3744A;
+	--color-black: #231F20;
+	--color-yellow: #FCE373; 
+	--color-rose: #cca69a;
+}
+
+.rozeSVG{
+	filter: invert(87%) sepia(2%) saturate(6632%) hue-rotate(319deg) brightness(92%) contrast(70%);
+}
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+
+
+/* _________ */
+/* NAVIGATIEBALK ONDERAAN */
+
+nav {
+	height: 4em;
+	width: 100vw;
+	z-index: 2;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background-color: var(--color-black);
+	align-items: center;
+}
+
+nav>ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin-top: 1em;
+	justify-content: space-evenly;
+}
+
+nav>ul>li:nth-of-type(3){
+	background-color: var(--color-rose);
+	border-radius: 100vw;
+	aspect-ratio: 1/1;
+	width: 5em;
+	border: var(--color-black) solid 4px;	
+	position: absolute;
+	bottom: 0em;
+	z-index: -1;
+}
+
+
+nav>ul>li>img{
+	width: 2em;
+	padding: 0;
+}
+
+nav>ul>li:nth-of-type(2)>img{
+	height: 2em;
+	width: 2.5em;
+}
+
+nav>ul>li:nth-of-type(4)>img{
+	transform: translateX(-3px) translateY(-6px) ;
+	scale: 1.2;
+}
+
+
+/* NAVIGATIE UITGEKLAPT */
+
+body>section{
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--color-rose);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	translate: 0 100em;
+	transition: all .5s ease-in-out;
+	z-index: 2;
+}
+
+body>section>ul{
+	display: grid;
+	gap: 1em;
+	text-align: center;
+	list-style: none;
+	align-self: center;
+	font-family: "Heading";
+	font-size: 2em;
+	justify-self: center;
+	padding: 0;
+}
+
+.menuUitgeklapt{
+	translate: 0 0;
 }
 
 
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+/*********************/
+/* HOME PAGINA  */
+/*********************/
 
-/* jouw code */
 
+
+	/* ....HEADER  */
+.home>header{
+	background-color: var(--color-yellow);
+	height: 35vw;
+}
+
+.home>header>section{
+	display: flex;
+	padding: 2em;
+	justify-content: center;
+}
+
+.home>header>section>button{
+	background-color: var(--color-yellow);
+	border-radius: 100vw;
+	height: 3em;
+	width: 5em;
+	border: solid 0.2em #e2cb64;
+	justify-self: center;
+	align-self: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	position: absolute;
+	left: 3em;
+}
+
+.home>header>section>img{
+	width: 12vw;
+}
+
+.home>header>h1{
+text-align: center;
+text-transform: uppercase;
+font-family: 'BodyBold';
+line-height: 1;
+font-size: clamp(7.5vw, 2em, 20em);
+margin-top: 5%;
+}
+
+.home>header>h1:first-of-type{
+animation: eenMuseum 5s infinite alternate;
+}
+
+/* een museum twee locaties kopje */
+
+.home>header>div:first-of-type{
+	font-family: "BodyBold";
+	text-align: center;
+	position: absolute;
+	font-size: 5em;
+	top: 1.6em;
+	left: 1.8em;
+	background-color: var(--color-yellow);
+	animation: naarTwee 5s alternate infinite;
+}
+
+@keyframes naarTwee {
+	0%{
+		transform: translateX(-25em);
+	}
+
+	50%{
+		transform: translateX(0);
+	}
+}
+
+.home>header>div:nth-of-type(2){
+	font-family: "BodyBold";
+	text-align: center;
+	position: absolute;
+	font-size: 5em;
+	top: 2.7em;
+	left: 0.7em;
+	background-color: var(--color-yellow);
+	animation: naarLocaties 5s alternate infinite;
+}
+
+@keyframes naarLocaties {
+	0%{
+		transform: translateX(25em);
+	}
+
+	50%{
+		transform: translateX(0);
+	}
+}
+
+
+
+
+
+
+
+
+/* -------------- */
+	/* ....MAIN home pagina*/
+/* -------------- */
+
+
+.home>main{
+	background-color: var(--color-rose);
+	text-align: center;
+}
+
+
+		/* ...agenda-sectie */
+
+.home>main>section:first-of-type{
+	display: grid;
+	gap: 5em;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.home>main>h2{
+	padding: 4em 0em 1.2em 0em;
+	font-family: "Body";
+	font-size: 1.8em;
+}
+
+.home>main>section:first-of-type>article>img{
+	aspect-ratio: 1 / 1;
+	width: 18em;
+	border: #FCE373 solid 0px;
+	transition: all 0.5s;
+}
+
+.home>main>section:first-of-type>article>img:hover{
+	border: solid 10px #FCE373;
+}
+
+.home>main>section:first-of-type>article>p:first-of-type{
+	font-family: "Body";
+	font-size: 0.8em;
+	margin: 1.5em 0em 0.8em 0em;
+}
+
+.home>main>section:first-of-type>article>h3{
+	font-family: 'BodyBold';
+	margin-bottom: 0.5em;
+}
+
+.home>main>section:first-of-type>article>p:nth-of-type(2){
+	font-size: 0.85em;
+	font-family: "Body";
+}
+
+.home>main>button{
+	margin-top: 2em;
+	margin-bottom: 4em;
+	margin-inline: auto;
+	padding: 1em 1.5em 1em 1.5em;
+	border-radius: 100vw;
+	border: none;
+	color: var(--color-yellow);
+	background-color: var(--color-black);
+	font-family: 'BodyBold';
+	font-size: 1em;
+	width: 18em;
+}
+
+
+
+
+
+		/* ....video-sectie  */
+
+.home>main>section:nth-of-type(2)>section:first-of-type{
+	position: relative;
+}
+
+.home>main>section:nth-of-type(2)>section:first-of-type>img{
+	width: 100vw;
+	aspect-ratio: 16 / 9;
+}
+
+.home>main>section:nth-of-type(2)>section:first-of-type>button{
+	position: absolute;
+	left: 43%;
+	top: 42%;
+	border-radius: 100vw;
+	background-color: var(--color-orange);
+	width: 5em;
+	height: 5em;
+	border: none;
+}
+
+.home>main>section:nth-of-type(2)>section:first-of-type>p{
+	position: absolute;
+	bottom: 30%;
+	color: white;
+	font-family: "Body";
+	font-size: 1.3em;
+	align-items: center;
+	margin-inline: 7em;
+}
+
+
+
+
+		/* ..locaties-sectie */
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>h2{
+	font-family: "Body";
+	font-size: 12vw;
+	padding-top: 1em;
+
+}
+
+.home>main>section:nth-of-type(2)>section{
+	background-color: var(--color-orange);
+	justify-content: center;
+	display: grid;
+}
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(1){
+	gap: 4em;
+	margin-top: 2em;
+	display: flex;
+	justify-self: center;
+}
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(1)>section>h3{
+	font-family: "Body";
+	font-size: 1em;
+}
+
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(1)>section>p{
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 0.9em;
+}
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2){
+	font-family: "Body";
+}
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>h2{
+	font-size: 1.1em;
+	margin-top: 2.5em;
+}
+
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>p{
+	font-size: 0.8em;
+	margin-top: 0.8em;
+	margin-inline: 3em;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	margin-bottom: 0.8em;
+}
+
+.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>a>p{
+	color: black;
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 0.8em;
+	margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************/
+/* HEADER COLLECTIE PAGINA  */
+/*********************/
+
+			/* ....navigatie */
+
+
+.collectie>header>section:first-of-type{
+	background-color: var(--color-green);
+	height: 10em;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50% 50%;
+}
+
+.collectie>header>section:first-of-type>img{
+	grid-column-start: 2;
+	grid-column-end: -1;
+	margin-left: 20%;
+	align-self: center;
+	height: 40%;
+}
+
+
+	/* taalknop */
+
+.collectie>header>section:first-of-type>button>img{
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.collectie>header>section:first-of-type>button>img:nth-of-type(2){
+	display: none;
+}
+
+
+.collectie>header>section:first-of-type>button{
+	background-color: var(--color-green);
+	border-radius: 10vw;
+	height: 3em;
+	width: 5em;
+	border: solid 0.2em #92c086;
+	margin-inline: auto;
+	margin-top: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	gap: 0.5em;
+	transition: all 0.5s;
+	z-index: 2;
+}
+
+/* taal-knop uitklappen */
+
+.collectie>header>section:first-of-type>button:hover{
+	background-color: var(--color-yellow);
+	width: 4em;
+	height: 15em;
+	border: solid black 3px;
+	border-radius: 1.5em;
+	z-index: 2;
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+}
+/* 
+.collectie>header>section:first-of-type>button:hover img:nth-of-type(2){
+	transform: translateX(-10px);
+	z-index: -1;
+	opacity: 0;
+} */
+
+.collectie>header>section:first-of-type>button:hover img:nth-of-type(2){
+	display: block;
+}
+
+
+
+
+
+/* ----------------------- */
+
+
+
+.collectie>header>section:first-of-type>section{
+	justify-self: center;
+	align-self: flex-start;
+	text-align: center;
+}
+
+.collectie>header>section:first-of-type>section>img{
+	margin-bottom: 0.3em;
+	margin-top: 0.5em;
+	width: 30%;
+}
+
+.collectie>header>section:first-of-type>section:nth-of-type(3)>img{
+	margin-bottom: 0.2em;
+}
+
+
+.collectie>header>section:first-of-type>section>h2{
+	font-family: "Body";
+	font-size: 80%;
+}
+
+
+
+
+			/* ......tijdlijn sectie..... */
+
+.collectie>header>section:nth-of-type(2){
+	background-color: var(--color-black);
+	height: 6em;
+	overflow-x: auto;
+	align-items: center;
+}
+
+.collectie>header>section:nth-of-type(2)::-webkit-scrollbar{
+	display: none;
+}
+
+.collectie>header>section:nth-of-type(2)>ol{
+display: flex;
+gap: 1.7em;
+text-decoration: none;
+list-style-type: none;
+color: var(--color-green);
+font-family: "Body";
+font-size: 1em;
+padding-top: 2.5em;
+}
+
+.collectie>header>section:nth-of-type(2)>ol>li:nth-of-type(2n){
+	font-size: 0.5em;
+	font-family: "BodyBold";
+	margin-top: 0.6em;
+}
+
+.collectie>header>section:nth-of-type(2)>ol>li:last-of-type{
+	opacity: 0;
+}
+
+
+
+
+
+
+/*********************/
+/* MAIN COLLECTIE PAGINA */
+/*********************/
+
+.collectie>main{
+	background-color: var(--color-orange);
+}
+
+.collectie>main>h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 6em;
+	font-weight: 100;
+	line-height: 0.6;
+	font-family: "Heading";
+	margin-bottom: 0.2em;
+	color: var(--color-black);
+	opacity: 0.95;
+	padding-top: 0.5em;
+}
+
+.collectie>main>p:first-of-type{
+	text-align: center;
+	font-family: "BodyBold";
+	font-size: 2;
+	color: var(--color-black);
+	opacity: 0.8;
+}
+
+.collectie>main>p:first-of-type>a{
+	text-decoration: underline;
+}
+
+		/* ....foto gallerij.... */
+
+.collectie>main>section:first-of-type{
+	display: flex;
+	gap: 0.2em;
+	margin: 3em 0.2em 0em 0.2em;
+}
+
+
+.collectie>main>section:first-of-type>section{
+	width: 50%;
+	gap: 0.2em;
+	position: relative;
+}
+
+
+
+.collectie>main>section:first-of-type>section>img{
+	width: 100%;
+	transition: border 0.3s;
+	border: var(--color-green) solid 0;
+}
+
+
+
+
+
+		/* ---------------------- */
+		/* ...foto hover animatie... */
+		/* ---------------------- */
+
+.collectie>main>section:first-of-type>section>img:hover{
+	border: var(--color-green) solid 1.5vw;
+	filter: blur(1px);
+}
+
+.collectie>main>section:first-of-type>section:first-of-type>div>img{
+	height: 5vw;
+	width: 5vw;
+	border-radius: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: 0.5s ease;
+	rotate: -30deg;
+	transform: translateY(-0.5em);
+	scale: 0.1;
+}
+.collectie>main>section:first-of-type>section:first-of-type>img:hover + div img,
+.collectie>main>section:first-of-type>section:first-of-type>div:hover img
+{
+	opacity: 1;
+	rotate: 0deg;
+	scale: 1;
+	transform: translateY(0);
+	margin-bottom: 0.5em;
+}
+
+.collectie>main>section:first-of-type>section:first-of-type>div{
+	justify-content: center;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	text-align: center;
+	z-index: 2;
+}
+
+.collectie>main>section:first-of-type>section:first-of-type>div>h4{
+	color: white;
+	font-family: "BodyBold";
+	font-size: 1.5vw;
+	opacity: 0;
+	transition: 0.3s;
+	transition-delay: 0.1s;
+	transform: translateY(0.8em)
+}
+
+.collectie>main>section:first-of-type>section:first-of-type>img:hover + div h4,
+.collectie>main>section:first-of-type>section:first-of-type>div:hover h4
+{
+	opacity: 1;
+	transform: translateY(0)
+}
+
+
+.collectie>main>section:first-of-type>section:first-of-type>div>p{
+	font-family: "Body";
+	color: white;
+	font-size: 1vw;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(-0.5em);
+	transition: 0.3s;
+	transition-delay: 0.2s;
+}
+
+.collectie>main>section:first-of-type>section:first-of-type>img:hover + div p,
+.collectie>main>section:first-of-type>section:first-of-type>div:hover p{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+		/* positioneren hover animaties */
+		/* ---------LINKS-------------- */
+
+
+		.collectie>main>section:first-of-type>section:first-of-type>div:nth-of-type(2){
+			position: absolute;
+			transform: translateY(42em);
+			left: 30%;
+		}
+
+		.collectie>main>section:first-of-type>section:first-of-type>div:nth-of-type(3){
+			position: absolute;
+			transform: translateY(105em);
+			left: 30%;
+		}
+
+		.collectie>main>section:first-of-type>section:first-of-type>div:nth-of-type(4){
+			position: absolute;
+			transform: translateY(145em);
+			left: 6%;
+		}
+		.collectie>main>section:first-of-type>section:first-of-type>div:nth-of-type(4)>h4{
+			margin-inline: 4em;
+		}
+
+
+
+
+
+
+/* -------------------------------- */
+/* FOOTER */
+/* -------------------------------- */
+
+
+	/* ...formulier + knop... */
+footer{
+	background-color: var(--color-yellow);
+}
+
+footer>section:first-of-type{
+	display: grid;
+}
+
+footer>section:first-of-type>h2:first-of-type{
+	text-align: center;
+	padding-top: 2em;
+	margin: 0em 1.3em 1.5em 1.3em;
+	font-size: 1.15em;
+	font-family: "BodyBold";
+}
+
+footer>section:first-of-type>form{
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+}
+
+footer>section:first-of-type>form>input[type=text]{
+	border: none;
+	background-color: var(--color-yellow);
+	box-shadow: none;
+	border-radius: 0.3em;
+	border-bottom: 2px solid black;
+	width: 12em;
+}
+
+footer>section:first-of-type>input[type=text]:focus{
+	outline: none;
+	border-radius: 0.3em;
+	border-bottom: 2px solid black;
+}
+
+footer>section:first-of-type>form>input[type=text]::placeholder{
+	font-family: "Body";
+	font-size: 0.85em;
+	color: #231F20;
+}
+
+footer>section:first-of-type>button:first-of-type{
+	background-color:#857a46;
+	color: var(--color-yellow);
+	box-shadow: none;
+	border: none;
+	padding: 0.8em 2.5em 0.8em 2.5em;
+	border-radius: 100vw;
+	font-family: "BodyBold";
+	opacity: 0.7;
+	justify-self: center;
+	transition: opacity 0.1s ease-in-out;
+	margin-inline: auto;
+	margin-top: 1.5em;
+}
+
+footer>section:first-of-type>button:first-of-type:hover{
+	background-color: var(--color-black);
+	opacity: 1;
+
+}
+
+
+
+
+
+		/* ....locaties musea.... */
+footer>section:nth-of-type(2){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+footer>section:nth-of-type(2)>section{
+	font-family: "Body";
+	text-align: center;
+	font-size: 0.75em;
+	padding-bottom: 4em;
+}
+
+footer>section:nth-of-type(2)>section>h3{
+	font-family: "BodyBold";
+}
+
+footer>hr{
+	padding-bottom: 2em;
+	border: hidden;
+	border-top: 2px solid black;
+	justify-self: center; 
+	width: 75%;
+	margin: auto;
+}
+
+
+
+
+
+		/* ....linkjes en social media.... */
+footer>section:nth-of-type(3){
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 1fr 1fr;
+	font-family: "Body";
+	text-align: center;
+	justify-content: center;
+	gap: 0.3em;
+	margin-left: 1.5em;
+}
+footer>section:nth-of-type(3)>p:nth-of-type(1){
+	text-align: right;
+}
+
+footer>section:nth-of-type(3)>p:nth-of-type(3){
+	text-align: left;
+}
+
+footer>section:nth-of-type(3)>p:nth-of-type(4){
+	text-align: right;
+}
+
+footer>section:nth-of-type(3)>p:nth-of-type(5){
+	grid-column: span 2;
+	text-align: left;
+	margin-left: 1em;
+}
+
+footer>section:nth-of-type(4){
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	margin: 2em 0em 2em 0em;
+}
+
+
+
+/* ------------------ */
+/*     KEYFRAMES      */
+/* ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------MEDIA--------------- */
+/* NAVBAR EN TIJDLIJN NAAR LINKS */
+/* -------------------------------- */
+
+
+
+@media screen and (min-width: 900px){
+
+/* ------------------- */
+/* HOMEPAGINA */
+
+
+	/* agenda sectie */
+
+	.home>main>section:first-of-type{
+		display: flex;
+	}
+
+	.home>main>section:first-of-type{
+		overflow-x: auto;
+	}
+
+	.home>main>section:first-of-type::-webkit-scrollbar{
+		display: none;
+	}
+
+
+	.home>main>section:first-of-type>article>img{
+		width: 26em;
+	}
+
+	.home>main>button{
+		margin-block: 5em; 
+	}
+
+
+
+
+	/* home locaties sectie */
+
+	.home>main>section:nth-of-type(2){
+		display: flex;
+	}
+
+	.home>main>section:nth-of-type(2)>section:first-of-type>img{
+		width: 40vw;
+		aspect-ratio: 16 / 9;
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(2)>h2{
+		font-size: 5em;
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>p{
+		margin-inline: 10em;
+		font-size: 1.2em;
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>h2{
+		font-size: 2em
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(2)>a>p{
+		font-size: 1.2em;
+		text-decoration: underline black;
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(2)>article:nth-of-type(1){
+		margin-top: 15em;
+	}
+
+	/* video sectie fixed */
+
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(1){
+		height: 100vh;
+	}
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(1)>img{
+		height: 50vh;
+		aspect-ratio: 16/9;
+	}
+
+
+
+	.home>main>section:nth-of-type(2)>section:nth-of-type(1){
+		position: sticky;
+		top: 0px;
+		left: 0px;
+	}
+
+
+
+
+
+
+
+
+
+			/* navbar */
+	.collectie>header>section:first-of-type{
+		position: fixed;
+		left: 0;
+		right: initial;
+		height: 100vh;
+		width: 12vw;
+		background-color: var(--color-green);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2em;
+	}
+
+	.collectie>header>section:first-of-type>section{
+		margin-inline: auto;
+	}
+
+	.collectie>header>section:first-of-type>img{
+		display: none;
+	}
+	.collectie>header>section:first-of-type>button{
+		margin-top: 3em;
+	}
+
+
+
+			/* tijdlijn */
+	.collectie>header>section:nth-of-type(2){
+		position: fixed;
+		left: 12vw;
+		height: 100vh;
+		width: 12vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.collectie>header>section:nth-of-type(2)>ol>li:last-of-type{
+		opacity: 0;
+	}
+
+	.collectie>header>section:nth-of-type(2)>ol{
+		display: grid;
+		padding: 0;
+		justify-content: center;
+		text-align: center;
+		margin-top: 10em;
+			}
+
+	.collectie>header>section:nth-of-type(2)>ol>li:nth-of-type(2n){
+		rotate: 90deg;
+		font-family: "BodyBold";
+		font-size: 1em;
+	}
+
+			/* main */
+	.collectie>main{
+		width: 76vw;
+		margin-left: 24vw;
+	}
+
+	.collectie>main>h1{
+		font-size: 15vw;
+	}
+
+	.collectie>main>section:first-of-type{
+		margin-inline: 3em;
+	}
+
+	.collectie>main>p:first-of-type{
+		font-size: 2vw;
+		font-family: "Body";
+	}
+
+
+
+			/* footer */
+	.collectie>footer{
+		width: 76vw;
+		margin-left: 24vw;
+	}
+
+}
