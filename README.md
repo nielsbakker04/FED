@@ -9,7 +9,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
 ## Jij
 
 <details open>
@@ -25,7 +24,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik ga focussen op de surface plane. 
  
 </details>
-
 
 
 
@@ -52,11 +50,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+   Website: Frans Hals Museun | Ingevuld door Binc van Buren
+
+   - knoppen zijn goed uitgeschreven en de website bevat duidelijke taal
+   - bij het roteren van de website overlappen sommige elementen over elkaar heen
+   - titel nog speciek maken voor de pagina 
+   - het navigeren tussen de focus states gaat nog niet helemaal soepel
+    waarbij de volgorde verwarrrend is of dat je niet ziet waar de focus zit.
+   - beide pagina's bevatten één enkele h1 en de heading volgorde is goed 
+   - alt teksten nog toevoegen bij images 
+
+  
+
+
 
 </details>
 
@@ -88,7 +100,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  Ik ben goed op weg. Ik merk dat ik veel van de stof al redelijk goed beheers en dus kan ik veel tijd 
+  spenderen aan mijn website ipv aan de opdrachten. Ik heb de layout en de vormgeving van mijn eerste pagina
+  zo goed als af en dus ligt ik, volgends Vasilis, 'op schema'. Ik loop tot nu toe tegen geen problemen aan. 
+  Mijn volgende prioriteit is het opzetten en opmaken van de tweede pagina met HTML & CSS. 
 
 
   ### Agenda voor meeting
@@ -96,15 +112,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | persoonlijke   | persoonlijke       | persoonlijke | persoonlijke     |
+  | vraag          | vraag              | vraag        | vraag            |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - verbeterde UX van mijn forum sectie door labels toevoegen zodat je tijdens het typen deze nog kan zien
   - punt 2
   - nog een punt
   - ...
@@ -121,7 +136,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  Ik heb nog steeds veel plezier in het coderen en heb dus tijdens de les, maar ook buiten schooltijd, 
+  veel gewerkt aan mijn site. De basis van de eerste 2 pagina's is nu klaar. Ik merk wel dat hoe meer
+  HTML en CSS ik schrijf, des te vaker dat er dingen breken in mijn website. Vaak was het makkelijk op te lossen
+  maar wel even zoeken tussen alle CSS. Daarom ben ik extra gaan focussen op het opruimen en netjesh ouden van mijn CSS. Mijn volgende prioriteit is de surface plane - mijn gekozen focus. Daarnaast zijn de twee pagina's die ik heb
+  gemaakt al aardig responsive. Ik ga dus verdiepen in animaties, hovers, thema's en JavaScript. 
 
 
   ### Agenda voor meeting
@@ -129,24 +149,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | persoonlijke   | persoonlijke       | persoonlijke | persoonlijke     |
+  | vraag          | vraag              | vraag        | vraag            |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+ - veel HTML & CSS 
+ - nette, semantische code 
+ - goed gebruik van kopjes om CSS te sorteren
+ - je gebruikt custom properties; je kunt nog kijken naar een ligt/-dark-mode
+ - read.me bijwerken! :)
 
 </details>
-
-
-
-
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
@@ -156,6 +171,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  - de volgorde waarmee je door de pagina tabt was nog niet helemaal logisch 
+  - alt teksten bij images ontbraken
+  - evt. reduce-motion toevoegen om animaties te beperken 
+  - sommige linkjes zagen er nog niet uit als linkjes
 </details>
 
 
@@ -165,29 +184,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 3 (week 4)
 
 <details>
+
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Woensdag hadden we de laatste les van dit vak gehad en dus alle stof behandeld.
+  Door goed bij te blijven heb ik alle onderdelen uit de les kunnen verwerken in mijn site. 
+  Ik ben dan ook erg tevreden over de huidige status van mijn pagina's en denk dat ik dit weekend kan beginnen
+  met het afronden van dit project. Tijdens de toegankelijkheidstest van vorige les kwam ik er achter dat er op
+  dit gebied nog veel verbeterd kon worden. Dit was nu mijn prioriteit en hierover had ik enkele vragen. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+
+| student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | persoonlijke   | persoonlijke       | persoonlijke | persoonlijke     |
+  | vraag          | vraag              | vraag        | vraag            |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - tabben door de pagina gaat nu op een logische volgorde 
+  - de verborgen menu klapt nu uit wanneer de interactieve elementen hierin focus krijgen (dmv focus-within)
+  - UX van de forum sectie verbeterd met type = gmail ipv type = text 
 
 </details>
 
@@ -229,8 +251,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. tekst en afbeeldingen - https://www.franshalsmuseum.nl/nl/
+  2. h1 inspiratie - https://codepen.io/alvarotrigo/pen/jOLgeqe
+  3. iconen - https://www.flaticon.com
 
 </details>

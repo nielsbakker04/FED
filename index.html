@@ -12,14 +12,16 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body class="home">
+<body id="top" class="home">
+
+	<div class="achtergrond"></div>
 
 	<section class="menuIngeklapt">
 		<ul>
-			<li>BEZOEK</li>
-			<li>KUNST & NIEUWS</li>
-			<li>OVER ONS</li>
-			<li>STEUN</li>
+			<li><a href="collectie.html">BEZOEK</a></li>
+			<li><a href="collectie.html">KUNST & NIEUWS</a></li>
+			<li><a href="collectie.html">OVER ON</a></li>
+			<li><a href="collectie.html">STEUN</a></li>
 		</ul>
 	</section>
 
@@ -30,25 +32,49 @@
 				<img src="./images/icons/dropdown-icon.png" alt="Dropdown menu icon">
 			</button>
 			<img src="./images/logo.png" alt="Frans Hals Museum">
+			<section>
+				<button>:)</button>
+				<div></div>
+			</section>
 		</section>
 
 
-		<h1>één museum<br>twee locaties</h1>
-		<!-- <div><p>TWEE</p></div>
-		<div><p>LOCATIES</p></div> -->
+		<h1>
+			<span>één</span>
+			<span>museum</span><br>
+			<span>twee</span>
+			<span>locaties</span>
+		</h1>
+
 
 		<nav>
 			<ul>
-				<li><img src="./images/icons/calendar.svg" alt="" class="rozeSVG"></li>
-				<li><img src="./images/icons/ticket.svg" alt="" class="rozeSVG"></li>
-				<li></li>
-				<li><img class="hamburgerKnop" src="./images/icons/hamburger_icon.svg.png" alt=""></li>
-				<li><img src="./images/icons/magnifyingglass.svg" alt="" class="rozeSVG"></li>
-				<li><img src="./images/icons/location.svg" alt="" class="rozeSVG"></li>
+				<a href="collectie.html">
+					<li><img id="agendaKnop" src="./images/icons/calendar.svg" alt="" class="rozeSVG"></li>
+				</a>
+				<a href="collectie.html">
+					<li><img src="./images/icons/ticket-svgrepo-com.svg" alt="" class="rozeSVG"></li>
+				</a>
+				<a href="collectie.html">
+					<li></li>
+				</a>
+				<a href="collectie.html">
+					<li><img class="hamburgerKnop" src="./images/icons/hamburger_icon.svg.png" alt=""></li>
+				</a>
+				<a>
+					<li><img id="zoekKnop" src="./images/icons/magnifyingglass.svg" alt="" class="rozeSVG"></li>
+				</a>
+				<a href="collectie.html">
+					<li><img src="./images/icons/location.svg" alt="" class="rozeSVG"></li>
+				</a>
 			</ul>
 		</nav>
-
-
+		<section class="zoekArticle">
+			<button>
+				<input type="text" placeholder="Schrijf hier...">
+				<img src="./images/icons/magnifyingglass.svg" alt="">
+			</button>
+		</section>
 	</header>
 
 	<main>
@@ -61,16 +87,16 @@
 				<p>Kom 21 oktober naar het Frans Hals Museum</p>
 			</article>
 			<article>
-				<img src="./images/agenda1.jpg" alt="">
-				<p>EVENEMENT IN HOF</p>
-				<h3>Museumnacht Kids Haarlem 2023</h3>
-				<p>Kom 21 oktober naar het Frans Hals Museum</p>
+				<img src="./images/agenda2.png" alt="">
+				<p>ACTIVITEIT IN HOF</p>
+				<h3>Teken een kleurrijk portret</h3>
+				<p>Zelf aan de slag in het Frans Hals Museum</p>
 			</article>
 			<article>
-				<img src="./images/agenda1.jpg" alt="">
-				<p>EVENEMENT IN HOF</p>
-				<h3>Museumnacht Kids Haarlem 2023</h3>
-				<p>Kom 21 oktober naar het Frans Hals Museum</p>
+				<img src="./images/agenda3.png" alt="">
+				<p>ACTIVITEIT IN HOF</p>
+				<h3>Fotowedstrijd - Blik op Haarlem</h3>
+				<p>Wat is jouw blik op Haarlem?</p>
 			</article>
 
 		</section>
@@ -82,19 +108,19 @@
 			<section>
 				<img src="./images/video-top.jpeg" alt="">
 				<img src="./images/video-bottom.jpeg" alt="">
-				<button>></button>
-				<p>Play video about the Frans Hals Museum</p>
 			</section>
 
 			<section>
 				<h2>LOCATIONS</h2>
 				<article>
 					<section>
+						<img src="./images/locatie1.png" alt="">
 						<h3>HOF</h3>
 						<p>Groot Heiligland 62</p>
 						<p>2011 ES Haarlem</p>
 					</section>
 					<section>
+						<img src="./images/locatie2.png" alt="">
 						<h3>HAL</h3>
 						<p>Grote Markt 16</p>
 						<p>2011 RD Haarlem</p>
@@ -103,24 +129,36 @@
 
 				<article>
 					<h2>Één museum twee locaties</h2>
-					<p>Het Frans Hals Museum is het kunstmuseum van Haarlem. Hier vind je de grootste collectie
-						schilderijen van Frans Hals ter wereld naast werk van andere beroemde Haarlemse kunstenaars
-						zoals Judith Leyster, Cornelis van Haarlem en Jacob van Ruisdael. Maar je ontdekt er ook een
-						rijke verzameling kunst van 1880 tot nu, waaronder werk van Piet Mondriaan, Charley Toorop, en
-						Rineke Dijkstra<br><br>
-						Ontmoet 16de en 17de-eeuwse, moderne en hedendaagse kunst in twee schitterende historische
-						gebouwen in de oude binnenstad van Haarlem.</p>
-					<a href="">
+					<p>Het Frans Hals Museum, gelegen in het prachtige Haarlem, is een ware schat voor kunstliefhebbers.
+						Het museum herbergt de grootste collectie schilderijen van Frans Hals ter wereld, waardoor het
+						een onmisbare bestemming is voor liefhebbers van deze Nederlandse meester. Hier kun je je
+						onderdompelen in de meesterwerken van Hals, bewonder zijn ongeëvenaarde techniek en genieten van
+						de levendigheid van zijn portretten.<br><br>
+						Maar dat is niet alles wat het museum te bieden heeft. Het Frans Hals Museum is ook de
+						thuisbasis van werken van andere beroemde Haarlemse kunstenaars zoals Judith Leyster, Cornelis
+						van Haarlem en Jacob van Ruisdael. Deze kunstenaars hebben allemaal een onuitwisbare stempel
+						gedrukt op de Nederlandse schilderkunst en hun meesterwerken worden hier met trots
+						tentoongesteld.<br><br>
+						Het museum is niet beperkt tot de 16de en 17de eeuwse kunst. Het biedt ook een rijke verzameling
+						kunstwerken van 1880 tot heden. Hier ontdek je de evolutie van de kunst door de jaren heen, met
+						werken van prominente kunstenaars zoals Piet Mondriaan, wiens abstracte composities de basis
+						legden voor de moderne kunst. Daarnaast zijn er ook stukken te bewonderen van Charley Toorop,
+						die bekendstaat om haar krachtige portretten, en Rineke Dijkstra, wiens fotografie de
+						complexiteit van het menselijk bestaan verkent.<br><br>
+						Wat het Frans Hals Museum echt bijzonder maakt, is dat het zich bevindt in twee schitterende
+						historische gebouwen in de oude binnenstad van Haarlem. Deze gebouwen ademen geschiedenis en
+						voegen een extra dimensie toe aan de kunstbeleving. Terwijl je door de zalen dwaalt, kun je
+						jezelf verliezen in de ambiance van de oude stad en je verbeelding laten reizen naar de tijden
+						waarin deze kunstwerken werden gemaakt.</p>
+					<a href="collectie.html">
 						<p>Over onze gebouwen</p>
 					</a>
-					<br><br><br><br><br>
-					<h3>Check</h3>
-					<p>dhfalsdkjfa;sldfa;sdjf;alskdfj</p>
-					<br><br><br><br><br>
-					<h2>check</h2>
 				</article>
 			</section>
 		</section>
+
+
+
 	</main>
 
 	<footer>
@@ -128,58 +166,65 @@
 			<h2>Frans Hals Museum stuurt je graag<br>e-mails</h2>
 			<form>
 				<label for="naam">Naam</label>
-				<input type="text" id="naam" placeholder="Naam">
+				<input type="text" id="naam" placeholder="bijv. Jan van Boom">
 				<label for="email">E-mail</label>
-				<input type="text" id="email" placeholder="E-mail">
+				<input type="text" id="email" placeholder="janvanboom@gmail.com">
 			</form>
 			<button>aanmelden</button>
 		</section>
+
 		<section>
-			<img src="" alt="">
-			<img src="" alt="">
+
 			<section>
+				<img src="./images/locatie1geel.png" alt="">
 				<h3>HOF</h3>
 				<p>Groot Heiligland 62</p>
 				<p>2011 ES Haarlem</p>
 			</section>
 			<section>
+				<img src="./images/locatie2geel.png" alt="">
 				<h3>HAL</h3>
 				<p>Grote Markt 16</p>
 				<p>2011 RD Haarlem</p>
 			</section>
 		</section>
+
 		<hr>
+
 		<section>
-			<p>Onze Missie</p>
-			<p>Voorwaarden</p>
-			<p>Contact</p>
-			<p>Colofon</p>
-			<p>Veelgestelde vragen</p>
+			<a href="collectie.html">
+				<p>Onze Missie</p>
+			</a>
+			<a href="collectie.html">
+				<p>Voowaarden</p>
+			</a>
+			<a href="collectie.html">
+				<p>Contact</p>
+			</a>
+			<a href="collectie.html">
+				<p>Colofon</p>
+			</a>
+			<a href="collectie.html">
+				<p>Veelgestelde vragen</p>
+			</a>
 		</section>
+
 		<section>
-			<img src="./images/icons/facebook.png" alt="Facebook logo">
-			<img src="./images/icons/twitter.png" alt="Twitter logo">
-			<img src="./images/icons/instagram-logo.png" alt="Instagram logo">
+			<a href="collectie.html"><img src="./images/icons/icons8-facebook-circled.svg" alt="Facebook logo"></a>
+			<a href="collectie.html"><img src="./images/icons/icons8-twitter.svg" alt="Twitter logo"></a>
+			<a href="collectie.html"><img src="./images/icons/icons8-instagram.svg" alt="Instagram logo"></a>
 		</section>
+
 		<hr>
+
+		<a href="#top">
+			<p>Terug naar boven</p>
+		</a>
+
 	</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<script defer src="scripts/script.js"></script>
+
 </body>
 
 </html>
